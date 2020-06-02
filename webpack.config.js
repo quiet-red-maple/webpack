@@ -79,7 +79,7 @@ module.exports = {
         loader: 'html-loader',
       },
       // 打包其他资源（除了html/js/css资源以外的资源）
-      {
+      { 
         // 排除css/js/json/less/html资源
         exclude: /\.(css|js|json|less|html)$/,
         loader: 'file-loader',
@@ -102,4 +102,18 @@ module.exports = {
   // 模式
   mode: 'development', // 开发模式
   // mode: 'production', // 生产模式
+
+  // 开发服务器 devServer: 自动化（自动编译，自动打开浏览器，自动刷新浏览器）
+  // 只会在内存中编译打包，不会有任何输出
+  // 启动devServer指令为：npx webpack-dev-server
+  devServer: {
+    // 项目构建后路径
+    contentBase: resolve(__dirname, 'build'),
+    // 启动gzip压缩
+    compress: true,
+    // 端口号
+    port: 3000,
+    // 自动打开浏览器
+    open: true
+  }
 }
