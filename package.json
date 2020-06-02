@@ -1,0 +1,28 @@
+{
+    "browserslist": {
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ],
+        "production": [
+            ">0.2%",
+            "not dead",
+            "mot op_mimi all"
+        ]
+    },
+    "dependencies": {
+        "@babel/polyfill": "^7.10.1",
+        "@babel/preset-env": "^7.10.2",
+        "babel-loader": "^8.1.0",
+        "core-js": "^3.6.5",
+        "eslint": "^7.1.0",
+        "eslint-config-airbnb-base": "^14.1.0",
+        "eslint-loader": "^4.0.2",
+        "eslint-plugin-import": "^2.20.2",
+        "optimize-css-assets-webpack-plugin": "^5.0.3"
+    },
+    "eslintConfig": {
+        "extends": "airbnb-base"
+    }
+}
